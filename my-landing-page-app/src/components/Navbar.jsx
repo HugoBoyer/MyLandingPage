@@ -10,16 +10,16 @@ export default function Navbar() {
                             </div>
                             <div class="hidden sm:ml-6 sm:block">
                                 <div class="flex space-x-4">
-                                    <a href="#" aria-current="page" class="rounded-md bg-black px-3 py-2 text-sm font-medium text-white">Dashboard</a>
-                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-950/50 hover:text-white">Team</a>
-                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-950/50 hover:text-white">Projects</a>
-                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-950/50 hover:text-white">Calendar</a>
+                                    <a href="#" aria-current="page" class="rounded-md px-3 py-2 text-sm font-medium text-white">Dashboard</a>
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-950/50 hover:text-white">Team</a>
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-950/50 hover:text-white">Projects</a>
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-950/50 hover:text-white">Calendar</a>
                                 </div>
                             </div>
                         </div>
                         <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                             <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
-                                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-950/50 hover:text-white">Calendar</a>
+                                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-950/50 hover:text-white">Login</a>
                             </button>
                         </div>
                     </div>
