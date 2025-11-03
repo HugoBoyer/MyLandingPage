@@ -1,24 +1,22 @@
-import Navbar from './components/Navbar'
+import Header from './components/Header'
 
 function App() {
 
   return (
-    <>
+    <div className="bg-[rgb(237,237,237)]">
       <div className='
-          bg-[url("../assets/moneybackground.png")]
           max-w-full
           bg-cover
           bg-center
           h-screen
           '
-          style={{clipPath: 'ellipse(60% 70% at 70% 40%)'}}
         >
-        <Navbar />
+        <Header />
       </div>
       <div>
         test
       </div>
-    </>
+    </div>
   )
 }
 
