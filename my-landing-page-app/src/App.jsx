@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import Hero from './components/Hero'
 
 function App() {
 
@@ -12,9 +13,8 @@ function App() {
           '
         >
         <Header />
-      </div>
-      <div>
-        test
+        <Hero />
+
       </div>
     </div>
   )
