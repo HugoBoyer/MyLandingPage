@@ -27,14 +27,14 @@ export default function ConversionDevise() {
 
   return (
     <div className=" pt-40 bg-white rounded-lg" style={{ padding: '20px', maxWidth: '400px', margin: 'auto' }}>
-        <h1>Conversion de devise</h1>
+        <h1 className="text-center text-3x1 pb-15 text-[1.875rem]">Conversion de devise</h1>
             <div className="inline w-full">
                 <label className="block ">Montant :</label>
                 <input className="border-[#E5E7EB] border-2 border-solid rounded-lg  p-3 w-full" type="number"  value={montant || ""} onChange={(e) => setMontant(e.target.value)} />
             </div>
             <div className="inline m-20">
                 <label className="block">
-                    Depuis :
+                    De :
                 </label>
                 <select className="border-[#E5E7EB] rounded-lg border-2 border-solid p-3 w-full" value={fromDevise} onChange={(e) => setFromDevise(e.target.value)}>
                     <option value="USD">🇺🇸 Dollar Americain (USD)</option>
@@ -54,9 +54,12 @@ export default function ConversionDevise() {
                     <option value="JPY">🇯🇵 Yen Japonais (JPY)</option>
                 </select>
             </div>
-            <button className="mt-10 mb-10 p-5 block bg-[#E5E7EB] w-full" onClick={convertir}>Convertir</button>
-            <div className="bg-[#7B4DEE] h-40 align-item text-white rounded-lg text-center">
-                {resultat !== undefined && <p>Résultat : <p className="text-[40px]">{resultat.toFixed(2)}</p></p>}
+            <button className="rounded-lg mt-10 mb-10 p-5 block bg-[#E5E7EB] w-full" onClick={convertir}>Convertir</button>
+            <div className="bg-[#7B4DEE] h-40 text-white rounded-lg text p-5">
+                <p>Résultat : {resultat !== undefined && <p className="font-semibold text-[40px]">{resultat.toFixed(2)} {setToDevise}</p>} </p>
+                <div>
+                    {toDevise}
+                </div>
             </div>
     </div>
   )
