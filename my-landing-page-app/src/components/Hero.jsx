@@ -1,17 +1,23 @@
 import pngConverterMoney from '../assets/pngegg.png'
+import {useNavigate} from 'react-router-dom'
+
 
 export default function Hero() {
+    const navigate = useNavigate()
+
     return (
         <section className="pl-35 pr-35 pt-40">
             <div className='flex'>
                 <div className='w-1/2'>
                     <span className="uppercase text-[#7f7f7fff]">- Gratuit pendant 30 jours</span>
-                    <p>
-                        <h1 className="text-xl text-[72px] pb-5 leading-[80px]">Convertissez vos devises en un clic</h1>
-                    </p>    
+                    <h1 className="text-xl text-[72px] pb-5 leading-[80px]">Convertissez vos devises en un clic</h1>
                     <p>Rapide, simple et précis pour toutes vos transactions internationales.</p>
                     <div className=' text-center'>
-                        <button className="bg-[#3164F4] rounded-md px-4 py-4 text-sm text-white mt-15">Essayer gratuitement</button>    
+                        <button
+                            onClick={() => navigate('/conversion-devise')}
+                            className="bg-[#3164F4] rounded-md px-4 py-4 text-sm text-white mt-15">
+                            Essayer gratuitement
+                        </button>    
                     </div>
                 </div>
                 <div  className='w-1/2 '>
