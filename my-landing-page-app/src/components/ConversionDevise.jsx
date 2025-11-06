@@ -33,8 +33,8 @@ export default function ConversionDevise() {
     
 
   return (
-    <div className="flex">
-        <div className=" pt-40 bg-white rounded-lg" style={{ padding: '20px', maxWidth: '400px', margin: 'auto' }}>
+    <div className="flex justify-center">
+        <div className=" pt-40 bg-white rounded-lg" style={{ padding: '20px', maxWidth: '400px' }}>
             <h1 className="text-center text-3x1 pb-15 text-[1.875rem]">Conversion de devise</h1>
                 <div className="inline w-full">
                     <label className="block ">Montant :</label>
@@ -71,7 +71,7 @@ export default function ConversionDevise() {
     
                 </div>
         </div>
-        <div style={{ padding: '20px', maxWidth: '400px', margin: 'auto' }}>
+        <div style={{ paddingLeft: '20px', maxWidth: '400px'}}>
             <Commentaire />
         </div>
     </div>

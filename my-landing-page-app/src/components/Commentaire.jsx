@@ -41,7 +41,7 @@ export default function Commentaire() {
     return (
         <>
             <div className="bg-white p-10 rounded-lg">
-                <h1 className="p-5">Commentaire</h1>
+                <h2 className="pb-5 text-center">Commentaire</h2>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <input type="file" onChange={handleFileChange} accept="image/*"/>

@@ -7,7 +7,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="bg-[rgb(237,237,237)]">
+      <div className='max-w-6xl mx-auto'>
         <div className='
             max-w-full
             bg-cover

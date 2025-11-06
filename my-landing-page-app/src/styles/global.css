@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-  background-color: rgba(240, 247, 161, 0.073);
+  background-color: rgb(237,237,237);
 }
 
 h1, a , span, button {
