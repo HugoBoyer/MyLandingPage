@@ -7,3 +7,7 @@ body {
 h1, a , span, button {
   font-weight:600;
 }
+
+.shadow {
+  box-shadow: 1px 0px 10px 5px rgba(162, 158, 158, 0.2);
+}
