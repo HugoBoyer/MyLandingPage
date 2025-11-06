@@ -1,6 +1,9 @@
 import pngConverterMoney from '../assets/pngegg.png'
+import pngPortableMoney from '../assets/portableMoney.png'
+
 import {useNavigate} from 'react-router-dom'
 import IntroductionFeatures from './IntroductionFeatures'
+import Features from './Features'
 
 
 export default function Hero() {
@@ -8,7 +11,7 @@ export default function Hero() {
 
     return (
         <>
-            <section className="pt-40">
+            <section className="pt-30">
                 <div className='flex'>
                     <div className='w-1/2'>
                         <span className="uppercase text-[#7f7f7fff]">- Gratuit pendant 30 jours</span>
@@ -23,8 +26,8 @@ export default function Hero() {
                         </div>
                     </div>
                     <div  className='w-1/2 '>
-                        <img src='https://assets.api.uizard.io/api/cdn/stream/b733eebc-b165-4038-af41-cdbd51d7aedd.png' />
-                        <img src={pngConverterMoney} className='bg-center absolute top-40 rigth-20'/>
+                        <img src={pngPortableMoney} className='w-240'/>
+                        <img src={pngConverterMoney} className='bg-center absolute top-90 right-160 h-20'/>
                     </div>
                 </div> 
                 <div className='align-center text-center'>
@@ -40,6 +43,7 @@ export default function Hero() {
             </section>
             <section>
                 <IntroductionFeatures />
+                <Features />
             </section>
         </>
     )
