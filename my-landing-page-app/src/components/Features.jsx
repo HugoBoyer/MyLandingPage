@@ -2,7 +2,6 @@ export default function Features () {
     return (
         <>
             <h2 className='text-center mb-10 mt-60'>Video des tests</h2>   
-            <p></p>
             <div className="flex gap-10 pb-10">
                 <div class="max-w-lg bg-white rounded-xl shadow-md overflow-hidden p-6 shadow">
                     <div class="relative pb-[56.25%] h-0 overflow-hidden">

@@ -4,6 +4,7 @@ import {useNavigate} from 'react-router-dom'
 import IntroductionFeatures from './IntroductionFeatures'
 import Features from './Features'
 import Header from './Header'
+import Testimonials from './Testimonials'
 
 
 export default function Hero() {
@@ -38,6 +39,7 @@ export default function Hero() {
                 <div className='max-w-6xl mx-auto'>
                     <IntroductionFeatures />
                     <Features />
+                    <Testimonials />
                 </div>
             </section>
 
