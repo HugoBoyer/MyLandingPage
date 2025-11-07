@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
 body {
-  background-color: rgb(237,237,237);
+margin: 0;
+  background:white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1, a , span, button {
@@ -14,5 +18,5 @@ h2 {
 }
 
 .shadow {
-  box-shadow: 1px 0px 10px 5px rgba(162, 158, 158, 0.2);
+  box-shadow: 1px 0px 10px 5px rgba(146, 143, 143, 0.2);
 }

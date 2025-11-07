@@ -11,7 +11,7 @@ export default function Hero() {
 
     return (
         <>
-            <section className="pt-30">
+            <section className="pt-30 ">
                 <div className='flex'>
                     <div className='w-1/2'>
                         <span className="uppercase text-[#7f7f7fff]">- Gratuit pendant 30 jours</span>
@@ -20,7 +20,7 @@ export default function Hero() {
                         <div className=' text-center'>
                             <button
                                 onClick={() => navigate('/conversion-devise')}
-                                className="bg-[#3164F4] rounded-md px-4 py-4 text-white mt-15">
+                                className="bg-[#3164F4] rounded-md px-4 py-4 text-white mt-15 px-6 py-3  hover:bg-blue-700 font-semibold rounded-xl shadow-lg transition">
                                 Essayer gratuitement
                             </button>    
                         </div>
@@ -29,22 +29,9 @@ export default function Hero() {
                         <img src={pngPortableMoney} className='w-240'/>
                         <img src={pngConverterMoney} className='bg-center absolute top-90 right-160 h-20'/>
                     </div>
-                </div> 
-                <div className='align-center text-center'>
-                    <span className='width-[40px] '>Trusted by individuals and team at the world's best companies</span>
-                <div className='pt-10'>
-                        <span className='text-[30px] text-[#7f7f7fff] pr-10'>Logo</span>
-                        <span className='text-[30px] text-[#7f7f7fff] pr-10'>Logo</span>
-                        <span className='text-[30px] text-[#7f7f7fff] pr-10'>Logo</span>
-                        <span className='text-[30px] text-[#7f7f7fff] pr-10'>Logo</span>
-                        <span className='text-[30px] text-[#7f7f7fff] pr-10'>Logo</span>            
-                </div>
-                </div> 
+                </div>  
             </section>
-            <section>
-                <IntroductionFeatures />
-                <Features />
-            </section>
+
         </>
     )
 }
