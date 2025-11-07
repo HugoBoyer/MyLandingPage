@@ -2,8 +2,6 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ConversionDevise from './components/ConversionDevise'
-import IntroductionFeatures from './components/IntroductionFeatures';
-import Features from './components/Features';
 
 function App() {
 
@@ -25,10 +23,6 @@ function App() {
                 <Route path='/conversion-devise' element={<ConversionDevise />}></Route>
               </Routes>
             </div>
-            <section>
-              <IntroductionFeatures />
-              <Features />
-            </section>
           </div>
         </div>
       </BrowserRouter>

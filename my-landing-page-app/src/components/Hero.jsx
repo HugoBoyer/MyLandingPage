@@ -1,9 +1,9 @@
 import pngConverterMoney from '../assets/pngegg.png'
 import pngPortableMoney from '../assets/portableMoney.png'
-
 import {useNavigate} from 'react-router-dom'
 import IntroductionFeatures from './IntroductionFeatures'
 import Features from './Features'
+
 
 
 export default function Hero() {
@@ -30,6 +30,10 @@ export default function Hero() {
                         <img src={pngConverterMoney} className='bg-center absolute top-90 right-160 h-20'/>
                     </div>
                 </div>  
+                <div>
+                    <IntroductionFeatures />
+                    <Features />
+                </div>
             </section>
 
         </>

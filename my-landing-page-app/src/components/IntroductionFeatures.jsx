@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom"
+
+
 export default function IntroductionFeatures() {
+    const navigate = useNavigate()
+
     return (
         <>
                         <div className='align-center text-center mt-45'>
@@ -17,7 +22,9 @@ export default function IntroductionFeatures() {
             <div className="max-w-md">
                 <h2 className=" font-semibold leading-[55px] pb-5">Lorem ipsum dolor sit amet consectetur</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
-                <button className="mt-5 bg-[#3164F4] text-white p-2.5 rounded-md">Try for free</button>
+                <button
+                    onClick={() => navigate('/conversion-devise')}
+                    className="mt-5 bg-[#3164F4] text-white p-2.5 rounded-md">Try for free</button>
             </div>
             <div>
                 <img src="https://assets.api.uizard.io/api/cdn/stream/b1248553-6fb6-4670-8bef-7a02781703b7.png" className='absolute top-300 right-40 h-170'/>
