@@ -1,6 +1,8 @@
 import Hero from './components/Hero'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ConversionDevise from './components/ConversionDevise'
+import Landing from './pages/Landing'
+import FeaturesProduct from './pages/FeaturesProduct'
 
 function App() {
 
@@ -17,8 +19,8 @@ function App() {
             >
             <div>
               <Routes>
-                <Route path='/' element={<Hero />}></Route>
-                <Route path='/conversion-devise' element={<ConversionDevise />}></Route>
+                <Route path='/' element={<Landing />}></Route>
+                <Route path='/conversion-devise' element={<FeaturesProduct />}></Route>
               </Routes>
             </div>
           </div>

@@ -30,7 +30,6 @@ export default function Features () {
                         <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>       
-
             </div>
         </>
     )
