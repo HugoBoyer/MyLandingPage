@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <>
-            <nav class="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 backdrop-blur-sm">
+            <nav class="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 backdrop-blur-sm mb-40">
                 <div class="mx-auto">
                     <div class="relative flex h-28 items-center justify-between">
                         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
