@@ -4,7 +4,7 @@ import IntroductionFeatures from "../components/IntroductionFeatures";
 import Testimonials from "../components/Testimonials";
 import VideoFeatures from "../components/VideoFeatures";
 
-export default function Home ({comments}) {
+export default function Home ({comments, layout="horizontal"}) {
   
     const featuresData = [
         {
@@ -42,7 +42,7 @@ export default function Home ({comments}) {
                         ))}
                     </div>
                     
-                    <Testimonials comments={comments}/>
+                    <Testimonials comments={comments} layout={layout}/>
                 </div>
             </section>
         </>

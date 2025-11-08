@@ -3,12 +3,11 @@ export default function CommentaireList({comments, layout = "vertical" }) {
     return <p className="text-center text-gray-500">Aucun commentaire pour le moment.</p>
   }
     return (
-        <div className={layout === "horizontal mt-5 p-10 bg-white rounded-lg overflow-hidden" ? "flex gap-4 overflow-x-auto py-4" : "flex flex-col gap-4 mt-5 p-10 bg-white rounded-lg overflow-hidden"}>
-                <p className="text-center pb-10">Avis Recent</p>
+        <div className={layout === "horizontal" ? "flex gap-4 overflow-x-auto py-4 " : "flex flex-col gap-4"}>
                 {comments.map(comment => 
                     <div key={comment.id} className={
             layout === "horizontal"
-              ? "min-w-[240px] bg-white p-4 rounded-lg shadow flex-shrink-0"
+              ? "min-w-[240px] bg-white items-start p-4 rounded-lg shadow flex-shrink-0"
               : "bg-white p-4 rounded-lg shadow"
           }>                
                         
@@ -17,11 +16,11 @@ export default function CommentaireList({comments, layout = "vertical" }) {
                             <span className="pl-5">{comment.name}</span>           
                         </div>
                         <p>{"★".repeat(comment.rating)}{"☆".repeat(5 - comment.rating)}</p>
-                        <i className="bg-">{comment.date}</i>
+                        <small  className="bg-">{comment.date}</small>
                         
                         <p className="wrap-anywhere">{comment.text}</p>
                     </div>
                 )}
-            </div>
+        </div>
     )
 }
