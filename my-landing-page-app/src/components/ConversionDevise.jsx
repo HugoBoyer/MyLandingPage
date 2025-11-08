@@ -74,7 +74,10 @@ export default function ConversionDevise({comments, setComments}) {
         </div>
         <div style={{ paddingLeft: '20px', maxWidth: '400px'}}>
             <Commentaire comments={comments} setComments={setComments} />
-            <CommentaireList comments={comments}/>
+            <div>
+                <h2 className="text-center pt-10">Avis recents</h2>
+                <CommentaireList comments={comments}/>
+            </div>
         </div>
     </div>
   )
