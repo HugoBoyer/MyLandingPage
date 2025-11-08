@@ -1,8 +1,9 @@
 import { useState } from "react"
 import axios from "axios"
 import Commentaire from './Commentaire.jsx'
+import CommentaireList from "./CommentaireList.jsx"
 
-export default function ConversionDevise() {
+export default function ConversionDevise({comments, setComments}) {
     const [fromDevise, setFromDevise] = useState("USD")
     const [toDevise, setToDevise] = useState("EUR")
     const [montant, setMontant] = useState("")
@@ -72,7 +73,8 @@ export default function ConversionDevise() {
                 </div>
         </div>
         <div style={{ paddingLeft: '20px', maxWidth: '400px'}}>
-            <Commentaire />
+            <Commentaire comments={comments} setComments={setComments} />
+            <CommentaireList comments={comments}/>
         </div>
     </div>
   )

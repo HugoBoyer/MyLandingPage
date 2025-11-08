@@ -1,10 +1,7 @@
 import { useState } from "react"
+import CommentaireList from "./CommentaireList"
 
-export default function Commentaire() {
-    const [comments, setComments] = useState(() => {
-        const saved = localStorage.getItem("comments")
-        return saved ? JSON.parse(saved) : []
-    })
+export default function Commentaire({comments, setComments}) {
     const [rating, setRating] = useState("0")
     const [name, setName] = useState("")
     const [text, setText] = useState("")
@@ -29,14 +26,16 @@ export default function Commentaire() {
             name,
             rating,
             text,
+            image,
             date: new Date().toLocaleString()
         }
         setComments([newComment, ...comments])
         setName("")
         setRating(0)
         setText("")
+        setImage(null)
     }
-    
+
 
     return (
         <>
@@ -60,22 +59,6 @@ export default function Commentaire() {
                     <textarea value={text} onChange={(e) => setText(e.target.value)} className="w-full border p-2 rounded" placeholder="Votre commentaire..."></textarea>
                     <button >Envoyer</button>
                 </form>
-            </div>
-            <div className="mt-5 p-10 bg-white rounded-lg overflow-hidden ">
-                <p className="text-center pb-10">Avis Recent</p>
-                {comments.map(comment => 
-                    <div key={comment.id} className="mb-10">                
-                        
-                        <div className="flex">
-                            <img src={image} className="w-8 h-8 rounded-full"/>
-                            <span className="pl-5">{comment.name}</span>           
-                        </div>
-                        <p>{"★".repeat(comment.rating)}{"☆".repeat(5 - comment.rating)}</p>
-                        <i className="bg-">{comment.date}</i>
-                        
-                        <p className="wrap-anywhere">{comment.text}</p>
-                    </div>
-                )}
             </div>
         </>
     )

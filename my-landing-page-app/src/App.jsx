@@ -1,10 +1,17 @@
-import Hero from './components/Hero'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ConversionDevise from './components/ConversionDevise'
 import Landing from './pages/Landing'
 import FeaturesProduct from './pages/FeaturesProduct'
+import { useEffect, useState } from 'react';
 
 function App() {
+    const [comments, setComments] = useState(() => {
+    const saved = localStorage.getItem("comments")
+    return saved ? JSON.parse(saved) : []
+  })
+
+  useEffect(() => {
+    localStorage.setItem("comments", JSON.stringify(comments))
+  }, [comments])
 
   return (
     <section >
@@ -19,8 +26,8 @@ function App() {
             >
             <div>
               <Routes>
-                <Route path='/' element={<Landing />}></Route>
-                <Route path='/conversion-devise' element={<FeaturesProduct />}></Route>
+                <Route path='/' element={<Landing comments={comments} setComments={setComments}/>}></Route>
+                <Route path='/conversion-devise' element={<FeaturesProduct comments={comments} setComments={setComments} />}></Route>
               </Routes>
             </div>
           </div>

@@ -4,7 +4,8 @@ import IntroductionFeatures from "../components/IntroductionFeatures";
 import Testimonials from "../components/Testimonials";
 import VideoFeatures from "../components/VideoFeatures";
 
-export default function Home () {
+export default function Home ({comments}) {
+  
     const featuresData = [
         {
             videos: ["https://www.youtube.com/embed/VIDEO_ID1"], 
@@ -19,7 +20,10 @@ export default function Home () {
             description: "Description de la troisième carte."
         }
     ]
+
+
     return (
+        
         <>
             <section className="min-h-screen  relative w-full bg-gradient-to-br from-white via-blue-100 to-blue-800">
                 <div className="max-w-6xl mx-auto">
@@ -38,7 +42,7 @@ export default function Home () {
                         ))}
                     </div>
                     
-                    <Testimonials />
+                    <Testimonials comments={comments}/>
                 </div>
             </section>
         </>
