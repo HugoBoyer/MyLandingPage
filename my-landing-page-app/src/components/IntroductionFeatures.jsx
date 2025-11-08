@@ -6,28 +6,29 @@ export default function IntroductionFeatures() {
 
     return (
         <>
-            <div className='align-center text-center mt-10'>
-                    <span className='width-[40px] '>Trusted by individuals and team at the world's best companies</span>
-                    <div className='pt-10'>
-                            <span className='text-[30px] text-[#7f7f7fff] pr-10'>Logo</span>
-                            <span className='text-[30px] text-[#7f7f7fff] pr-10'>Logo</span>
-                            <span className='text-[30px] text-[#7f7f7fff] pr-10'>Logo</span>
-                            <span className='text-[30px] text-[#7f7f7fff] pr-10'>Logo</span>
-                            <span className='text-[30px] text-[#7f7f7fff] pr-10'>Logo</span>            
+             {/* Logos */}
+            <div className='text-center mt-10 px-4 sm:px-6 lg:px-8'>
+                    <span cl='text-sm sm:text-base'>Trusted by individuals and team at the world's best companies</span>
+                    <div className='flex flex-wrap justify-center gap-6 mt-6'>
+                            <span className='text-lg sm:text-xl  text-[#7f7f7fff] pr-10'>Logo</span>
+                            <span className='text-lg sm:text-xl  text-[#7f7f7fff] pr-10'>Logo</span>
+                            <span className='text-lg sm:text-xl  text-[#7f7f7fff] pr-10'>Logo</span>
+                            <span className='text-lg sm:text-xl  text-[#7f7f7fff] pr-10'>Logo</span>
+                            <span className='text-lg sm:text-xl  text-[#7f7f7fff] pr-10'>Logo</span>            
                     </div>
             </div> 
-            <section className="bg-white rounded-xl mt-70 mb-15 p-20 flex shadow">
-            
-                <div class="elementShadow"></div>
-                <div className="max-w-md">
-                    <h2 className=" font-semibold leading-[55px] pb-5">Lorem ipsum dolor sit amet consectetur</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
+
+             {/* Section principale */}
+            <section className="bg-white rounded-xl mt-26 mb-15 p-6 lg:p-20 sm:p-30 flex flex-col lg:flex-row items-center relative shadow">
+                <div className="lg:max-w-md">
+                    <h2 className=" font-semibold  text-2xl sm:text-3xl lg:text-5xl leading-snug sm:leading-tight lg:leading-[55px] pb-5 sm:pb-5">Lorem ipsum dolor sit amet consectetur</h2>
+                    <p className="text-base sm:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
                     <button
                         onClick={() => navigate('/conversion-devise')}
-                        className="mt-5 bg-[#3164F4] text-white p-2.5 rounded-md">Try for free</button>
+                        className="mt-5 sm:mt-7 bg-[#3164F4] text-white p-25 py-2.5 px-4 sm:px-6 rounded-md hover:bg-blue-700 transition">Try for free</button>
                 </div>
-                <div>
-                    <img src="https://assets.api.uizard.io/api/cdn/stream/b1248553-6fb6-4670-8bef-7a02781703b7.png" className='absolute top-300 right-40 h-170'/>
+                <div className="relative w-full lg:w-1/2 mt-6 lg:mt-0 flex justify-center lg:justify-end">
+                    <img src="https://assets.api.uizard.io/api/cdn/stream/b1248553-6fb6-4670-8bef-7a02781703b7.png" className='lg:absolute lg:top-[-380px] lg:left-80 lg:h-170'/>
                 </div>
             </section>  
         </>

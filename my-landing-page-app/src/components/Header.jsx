@@ -2,26 +2,24 @@ export default function Header() {
     return (
         <>
             <nav class="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 backdrop-blur-sm ">
-                <div class="mx-auto">
+                <div class="max-w-6xl mx-auto">
                     <div class="relative flex h-28 items-center justify-between">
                         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                            <div class="flex shrink-0 items-center pr-20">
+                            <div class="flex shrink-0 items-center pr-10 sm:pr-20">
                                 <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" class="h-8 w-auto" />
                             </div>
                             <div class="hidden sm:ml-6 sm:block">
                                 <div class="flex space-x-4">
-                                    <a href="#" class="rounded-md px-3 py-2 text-sm text-[15px] font-medium text-[#030303]  ">Home</a>
-                                    <a href="#" class="rounded-md px-3 py-2 text-sm text-[15px] font-medium text-[#030303]  ">Pricing</a>
-                                    <a href="#" class="rounded-md px-3 py-2 text-sm text-[15px] font-medium text-[#030303]  ">About us</a>
-                                    <a href="#" class="rounded-md px-3 py-2 text-sm text-[15px] font-medium text-[#030303] ">Contact</a>                     
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Home</a>
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Pricing</a>
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">About us</a>
+                                    <a href="#" class="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303] ">Contact</a>                     
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                            <button class="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
-                                <a href="#" class="rounded-md px-3 py-2 text-sm text-[15px] font-medium text-[#030303]">Log In</a>
-                                <a href="#" class="rounded-md px-3 py-2 text-sm text-[15px] font-medium bg-[#3164F4] text-white">Sign up</a>
-                            </button>
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 space-x-2">
+                                <a href="#" class="rounded-md px-3 py-2 text-sm sm:text-base font-medium text-[#030303]">Log In</a>
+                                <a href="#" class="rounded-md px-3 py-2 text-sm sm:text-base font-medium bg-[#3164F4] text-white">Sign up</a>
                         </div>
                     </div>
                 </div>

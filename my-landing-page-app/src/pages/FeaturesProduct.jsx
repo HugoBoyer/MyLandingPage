@@ -1,6 +1,5 @@
 import ConversionDevise from "../components/ConversionDevise";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
 
 export default function ConversionApp () {
     return (

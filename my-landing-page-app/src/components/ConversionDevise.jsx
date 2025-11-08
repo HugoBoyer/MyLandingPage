@@ -36,7 +36,7 @@ export default function ConversionDevise() {
     <div className="flex justify-center mt-20">
         <div className=" bg-white rounded-lg" style={{ maxWidth: '400px' }}>
             <h1 className="text-5xl text-center pb-15">Conversion de devise</h1>
-                <div className="inline w-full">
+                <div className="inline w-full"> 
                     <label className="block ">Montant :</label>
                     <input className="border-[#E5E7EB] border-2 border-solid rounded-lg  p-3 w-full" type="number"  value={montant || ""} onChange={(e) => setMontant(e.target.value)} placeholder={fromDevise}  />
                 </div>
