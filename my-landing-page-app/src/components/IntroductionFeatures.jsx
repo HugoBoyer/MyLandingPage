@@ -3,23 +3,9 @@ import { useNavigate } from "react-router-dom"
 
 export default function IntroductionFeatures() {
     const navigate = useNavigate()
-    const logos = ["Adidas","Logo","Logo","Logo","Logo","Logo","Logo","Logo","Logo","Logo","Logo","Logo","Logo"]
 
     return (
         <>
-             {/* Logos */}
-            <div className='text-center mt-10 px-4 sm:px-6 lg:px-8 marquee-container'>
-                    <span cl='text-sm sm:text-base'>Trusted by individuals and team at the world's best companies</span>
-                    <div className='flex justify-center gap-6 mt-6 marquee-track'>
-                        {logos.map((logo, index) => (
-                            <span key={index} className='text-lg sm:text-xl  text-[#7f7f7fff] pr-10'>{logo}</span>
-                        ))}
-                        {logos.map((logo, index) => (
-                            <span key={index + "-2"} className='text-lg sm:text-xl  text-[#7f7f7fff] pr-10'>{logo}</span>
-                        ))}          
-                    </div>
-            </div> 
-
              {/* Section principale */}
             <section className="bg-white rounded-xl mt-26 mb-15 p-6 lg:p-20 sm:p-30 flex flex-col lg:flex-row items-center relative shadow">
                 <div className="lg:max-w-md">

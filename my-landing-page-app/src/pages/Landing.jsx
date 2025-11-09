@@ -1,6 +1,8 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import IntroductionFeatures from "../components/IntroductionFeatures";
+import LogoMarque from "../components/LogoMarque";
 import Testimonials from "../components/Testimonials";
 import VideoFeatures from "../components/VideoFeatures";
 
@@ -32,6 +34,7 @@ export default function Home ({comments, layout="horizontal"}) {
                 </div>
             </section>
             <section>
+                <LogoMarque />
                 <div className='max-w-6xl mx-auto'>
                     <IntroductionFeatures />
 
@@ -45,6 +48,7 @@ export default function Home ({comments, layout="horizontal"}) {
                     <Testimonials comments={comments} layout={layout}/>
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

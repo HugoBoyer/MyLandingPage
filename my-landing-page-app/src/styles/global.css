@@ -17,12 +17,17 @@ h1, a , span, button {
 }
 
 .marquee-track {
-  animation: marquee 15s linear infinite;
+  display: flex;
+  animation: marquee 20s linear infinite;
+    flex-wrap: nowrap;
 }
 
 .marquee-container {
   width: 100%;
   overflow: hidden;
+}
+.marquee-item {
+  flex: 0 0 auto;
 }
 
 @keyframes marquee {
@@ -30,6 +35,6 @@ h1, a , span, button {
     transform: translateX(0);
   }
     100% {
-    transform: translateX(-50%);
+    transform: translateX(-50%); 
   }
 }
