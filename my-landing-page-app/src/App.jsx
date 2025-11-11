@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './pages/Landing'
 import FeaturesProduct from './pages/FeaturesProduct'
 import { useEffect, useState } from 'react';
+import ContactPage from './pages/ContactPage';
 
 function App() {
     const [comments, setComments] = useState(() => {
@@ -28,6 +29,7 @@ function App() {
               <Routes>
                 <Route path='/' element={<Landing comments={comments} setComments={setComments}/>}></Route>
                 <Route path='/conversion-devise' element={<FeaturesProduct comments={comments} setComments={setComments} />}></Route>
+                <Route path='/contact' element={<ContactPage />} />
               </Routes>
             </div>
           </div>

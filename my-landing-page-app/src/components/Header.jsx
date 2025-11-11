@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom"
+
+
 export default function Header() {
+    const navigation = useNavigate()
     return (
         <>
             <nav className="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 backdrop-blur-sm ">
@@ -10,10 +14,9 @@ export default function Header() {
                             </div>
                             <div class="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
-                                    <a href="#" className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Home</a>
-                                    <a href="#" className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Pricing</a>
-                                    <a href="#" className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">About us</a>
-                                    <a href="#" className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303] ">Contact</a>                     
+                                    <a onClick={() => navigation("/")} href="#" className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Home</a>
+                                    <a onClick={() => navigation("/")} href="#" className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Pricing</a>
+                                    <a onClick={() => navigation("/contact")} href="#" className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303] ">Contact</a>                     
                                 </div>
                             </div>
                         </div>
