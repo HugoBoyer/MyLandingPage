@@ -7,8 +7,8 @@ export default function Hero() {
     const navigate = useNavigate()
 
     return (
-        <>
-            <div className='flex  mt-20 lg:mt-[8vh] sm:px-6 max-w-6xl mx-auto gap-10 '>
+        <div className='max-w-6xl mx-auto'>
+            <div className='flex  mt-20 lg:mt-[8vh] sm:px-6 lg:px-0 max-w-6xl mx-auto gap-10 '>
                 <div className='w-full lg:w-1/2'>
                     <span className="uppercase text-[#7f7f7fff] text-sm sm:text-base">- Gratuit pendant 30 jours</span>
                     <h1 className="text-3xl  sm:text-5xl lg:text-[72px] leading-snug sm:leading-tight lg:leading-[80px] font-bold">Boost your productivity. Start using our app today.</h1>
@@ -25,6 +25,6 @@ export default function Hero() {
                     <img src={pngPortableMoney} className=' w-64 sm:w-80 lg:w-480 relative z-10' alt="Portable Money"/>
                 </div>
             </div>  
-        </>
+        </div>
     )
 }

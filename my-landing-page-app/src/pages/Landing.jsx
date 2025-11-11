@@ -28,12 +28,11 @@ export default function Home ({comments, layout="horizontal"}) {
         
         <>
             <section className="min-h-screen  relative w-full bg-gradient-to-br from-white via-blue-100 to-blue-800">
-                <div className="max-w-6xl mx-auto">
                     <Header />
                     <Hero />
-                </div>
             </section>
-            <section>
+            
+            <main>
                 <LogoMarque />
                 <div className='max-w-6xl mx-auto'>
                     <IntroductionFeatures />
@@ -47,7 +46,8 @@ export default function Home ({comments, layout="horizontal"}) {
                     
                     <Testimonials comments={comments} layout={layout}/>
                 </div>
-            </section>
+            </main>
+
             <Footer />
         </>
     )
