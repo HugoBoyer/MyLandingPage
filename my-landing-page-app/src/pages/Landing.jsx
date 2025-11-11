@@ -36,7 +36,7 @@ export default function Home ({comments, layout="horizontal"}) {
                 <LogoMarque />
                 <div className='max-w-6xl mx-auto'>
                     <IntroductionFeatures />
-
+                    
                     <h2 className='text-center mb-10 mt-40 font-semibold  text-2xl sm:text-3xl lg:text-5xl'>Video des tests</h2>   
                     <div className="flex gap-10 pb-10 w-full">                        
                         {featuresData.map((feature, index) => (
