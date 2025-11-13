@@ -15,7 +15,7 @@ export default function Header() {
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
                                     <Link to={"/"} onClick={() => navigation("/")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Home</Link>
-                                    <Link to={"/prix"} onClick={() => navigation("/prix")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Pricing</Link>
+                                    <Link to={"/price"} onClick={() => navigation("/price")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Pricing</Link>
                                     <Link to={"/contact"} onClick={() => navigation("/contact")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303] ">Contact</Link>                     
                                 </div>
                             </div>
