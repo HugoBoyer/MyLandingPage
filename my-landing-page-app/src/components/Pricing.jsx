@@ -22,10 +22,10 @@ export default function Pricing() {
             <div className='max-w-6xl mx-auto '>
                 <h1 className="text-center lg: text-4xl pt-10 pb-5 font-semibold">Pricing</h1>
                 <p className="text-center pb-12">Lorem ipsum dolor sit amet consectetursectetuLorem ipsum dolor sit amet consectetursectetu</p>
-                <div className="flex">
+                <div className="flex overflow-visible relative gap-4">
                     {cardPrices.map((cardPrice, index) => (
 
-                        <div key={index} className="w-1/3 bg-white p-9 rounded-lg shadow relative">   
+                        <div key={index} className="w-1/3 bg-white p-9 rounded-lg shadow relative transition-all duration-300  hover:scale-115 hover:z-20 hover:shadow-x">   
                             {cardPrice.populaire ? <span className="absolute right-10 bg-[#3164F4] text-white pl-5 pr-5 pb-1 pt-1 rounded-full font-semibold">Most popular</span> : ""}      
                             <span className="font-semibold lg:text-1xl  ">{cardPrice.grade}</span>
                             <div className="pt-2 flex "><p className="font-semibold">$</p><span className="text-6xl font-semibold">{cardPrice.prix}</span><span className="block flex items-end">/month</span></div>
