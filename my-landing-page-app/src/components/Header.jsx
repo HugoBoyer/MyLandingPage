@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 
 export default function Header() {
@@ -10,13 +10,13 @@ export default function Header() {
                     <div className="relative flex h-28 items-center justify-between">
                         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                             <div className="flex shrink-0 items-center pr-10 sm:pr-20">
-                                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" class="h-8 w-auto" />
+                                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" className="h-8 w-auto" />
                             </div>
-                            <div class="hidden sm:ml-6 sm:block">
+                            <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
-                                    <a onClick={() => navigation("/")} href="#" className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Home</a>
-                                    <a onClick={() => navigation("/")} href="#" className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Pricing</a>
-                                    <a onClick={() => navigation("/contact")} href="#" className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303] ">Contact</a>                     
+                                    <Link to={"/"} onClick={() => navigation("/")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Home</Link>
+                                    <Link to={"/prix"} onClick={() => navigation("/prix")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Pricing</Link>
+                                    <Link to={"/contact"} onClick={() => navigation("/contact")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303] ">Contact</Link>                     
                                 </div>
                             </div>
                         </div>

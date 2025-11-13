@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import IntroductionFeatures from "../components/IntroductionFeatures";
 import LogoMarque from "../components/LogoMarque";
+import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
 import VideoFeatures from "../components/VideoFeatures";
 
@@ -45,6 +46,7 @@ export default function Home ({comments, layout="horizontal"}) {
                     </div>
                     
                     <Testimonials comments={comments} layout={layout}/>
+                    <Pricing />
                 </div>
             </main>
 
