@@ -14,14 +14,14 @@ export default function ContactPage() {
             </section>
 
             <main className="max-w-6xl mx-auto">
-                <div className="lg:flex mt-15 mb-20 gap-15 lg:mx-0 md:mx-10">
+                <div className="lg:flex mt-15 mb-20 gap-15 mx-5 lg:mx-0 md:mx-10">
                     <div className="lg:w-1/2">    
-                        <h1 className="md:text-4xl">Contact Us</h1>
+                        <h1 className="md:text-4xl sm:mx-7">Contact Us</h1>
                         <p>Lorem ipsum dolor, sit amet</p>
                         <p>Lorem ipsum dolor, sit amet</p>
                         <Formulaire />
                     </div>
-                    <div className="lg:w-1/2 h-auto grid grid-cols-2  text-center gap-8">
+                    <div className="lg:w-1/2 h-auto grid text-center gap-8  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                         <div className="bg-[#E5E7EB] p-5">
                             <div className="flex justify-center items-center">
                                 <TbMapPinFilled size={80} color="#3164F4" />
