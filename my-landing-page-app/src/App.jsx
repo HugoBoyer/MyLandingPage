@@ -27,7 +27,7 @@ function App() {
               h-screen
               '
             >
-            <div>
+            <div className=''>
               <Routes>
                 <Route path='/' element={<Landing comments={comments} setComments={setComments}/>}></Route>
                 <Route path='/conversion-devise' element={<FeaturesProduct comments={comments} setComments={setComments} />}></Route>
