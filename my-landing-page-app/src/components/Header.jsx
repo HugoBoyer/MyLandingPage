@@ -12,7 +12,7 @@ export default function Header() {
                             <div className="flex shrink-0 items-center pr-10 sm:pr-20">
                                 <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" className="h-8 w-auto" />
                             </div>
-                            <div className="hidden sm:ml-6 sm:block">
+                            <div>
                                 <div className="flex space-x-4">
                                     <Link to={"/"} onClick={() => navigation("/")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Home</Link>
                                     <Link to={"/price"} onClick={() => navigation("/price")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Pricing</Link>

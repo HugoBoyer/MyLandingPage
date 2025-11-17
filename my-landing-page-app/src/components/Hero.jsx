@@ -7,11 +7,11 @@ export default function Hero() {
     const navigate = useNavigate()
 
     return (
-        <div className='max-w-6xl mx-auto'>
-            <div className='flex  mt-20 lg:mt-[8vh] sm:px-6 lg:px-0 max-w-6xl mx-auto gap-10 '>
-                <div className='w-full lg:w-1/2'>
+        <div className='w-full mx-auto max-w-6xl md:max-w-4xl mt-20 lg:mt-[8vh] px-4 sm:px-6 lg:px-0'>
+            <div className='xl:flex lg:flex md:flex block gap-10 '>
+                <div className='lg:w-1/2'>
                     <span className="uppercase text-[#7f7f7fff] text-sm sm:text-base">- Gratuit pendant 30 jours</span>
-                    <h1 className="text-3xl  sm:text-5xl lg:text-[72px] leading-snug sm:leading-tight lg:leading-[80px] font-bold">Boost your productivity. Start using our app today.</h1>
+                    <h1 className="text-3xl lg:text-[72px] leading-snug lg:leading-[80px] font-bold">Boost your productivity. Start using our app today.</h1>
                     <p className="mt-4 text-base">Rapide, simple et précis pour toutes vos transactions internationales.</p>
                     <div className='text-center'>
                         <button
@@ -22,7 +22,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div  className='w-1/2 '>
-                    <img src={pngPortableMoney} className=' w-64 sm:w-80 lg:w-480 relative z-10' alt="Portable Money"/>
+                    <img src={pngPortableMoney} className=' w-64 sm:w-80 lg:w-480 xl:w-480 relative z-10' alt="Portable Money"/>
                 </div>
             </div>  
         </div>

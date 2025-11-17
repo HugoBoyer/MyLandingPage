@@ -7,7 +7,7 @@ export default function CommentaireList({comments, layout = "vertical" }) {
                 {comments.map(comment => 
                     <div key={comment.id} className={
             layout === "horizontal"
-              ? " w-1/3 bg-white items-start p-4  rounded-lg shadow flex-shrink-0"
+              ? "w-80 h-80 lg:w-1/3 bg-white items-start p-4  rounded-lg shadow flex-shrink-0"
               : "bg-white p-4 rounded-lg shadow"
           }>                
                         
