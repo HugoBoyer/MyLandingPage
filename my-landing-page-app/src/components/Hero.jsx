@@ -6,7 +6,7 @@ export default function Hero() {
     const navigate = useNavigate()
 
     return (
-        <div className='w-full mx-auto max-w-6xl mt-[10vh] lg:mt-[8vh] px-10 lg:px-0 '>
+        <div className='w-full mx-auto max-w-6xl mt-[10vh] lg:mt-[8vh] px-3 lg:px-0 '>
             <div className='xl:flex lg:flex block gap-10 '>
                 <div className='lg:w-1/2 text-center'>
                     <span className="uppercase text-[#7f7f7fff] text-sm sm:text-base">- Gratuit pendant 30 jours</span>

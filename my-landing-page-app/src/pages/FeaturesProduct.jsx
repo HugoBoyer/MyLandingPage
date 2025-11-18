@@ -9,7 +9,7 @@ export default function ConversionApp ({comments , setComments}) {
                 <Header />
             </section>    
 
-            <main className="max-w-6xl mx-auto px-10 lg:px-0">
+            <main className="max-w-6xl mx-auto px-3 lg:px-0">
                 <ConversionDevise comments={comments} setComments={setComments}/>
             </main>
 

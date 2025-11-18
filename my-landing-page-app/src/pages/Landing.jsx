@@ -35,7 +35,7 @@ export default function Home ({comments, layout="horizontal"}) {
             
             <main>
                 <LogoMarque />
-                <div className='w-full mx-auto max-w-6xl px-10 lg:px-0'>
+                <div className='w-full mx-auto max-w-6xl px-3 lg:px-0'>
                     <IntroductionFeatures />
                     
                     <h2 className='text-center mb-10 mt-40 font-semibold  text-2xl sm:text-3xl lg:text-5xl'>Video des tests</h2>   

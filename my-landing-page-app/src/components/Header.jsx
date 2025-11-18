@@ -7,7 +7,7 @@ export default function Header() {
     const navigation = useNavigate()
 
     return (
-        <header className="max-w-6xl mx-auto lg:px-0 px-10">
+        <header className="max-w-6xl mx-auto lg:px-0 px-3">
             <nav className="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 backdrop-blur-sm ">
                 <div className="max-w-6xl mx-auto">
                     <div className="relative flex h-28 items-center justify-between">
