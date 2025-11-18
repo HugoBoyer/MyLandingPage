@@ -13,8 +13,8 @@ export default function ContactPage() {
                 <Header />
             </section>
 
-            <main className="max-w-6xl mx-auto">
-                <div className="lg:flex mt-15 mb-20 gap-15 mx-5 lg:mx-0 md:mx-10">
+            <main className="w-full max-w-6xl mx-auto md:px-10 px-10 lg:px-0">
+                <div className="lg:flex mt-15 mb-20 gap-15">
                     <div className="lg:w-1/2">    
                         <h1 className="md:text-4xl sm:mx-7">Contact Us</h1>
                         <p>Lorem ipsum dolor, sit amet</p>

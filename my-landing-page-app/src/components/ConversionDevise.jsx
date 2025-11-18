@@ -34,8 +34,8 @@ export default function ConversionDevise({comments, setComments}) {
     
 
   return (
-    <div className="flex justify-center mt-20">
-        <div className=" bg-white rounded-lg" style={{ maxWidth: '400px' }}>
+    <div className="md:flex md:flex-cols-2 block mt-20 justify-between w-full md:w-3/3 gap-10">
+        <div className=" bg-white rounded-lg md:w-1/3 w-full">
             <h1 className="text-5xl text-center pb-15">Conversion de devise</h1>
                 <div className="inline w-full"> 
                     <label className="block ">Montant :</label>
@@ -72,7 +72,7 @@ export default function ConversionDevise({comments, setComments}) {
     
                 </div>
         </div>
-        <div style={{ paddingLeft: '20px', maxWidth: '400px'}}>
+        <div className="w-2/3">
             <Commentaire comments={comments} setComments={setComments} />
             <div>
                 <h2 className="text-center pt-10">Avis recents</h2>

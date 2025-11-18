@@ -52,9 +52,9 @@ export default function PricingPage() {
                     <Header />
                 </section>
                 
-                <main>
+                <main className="mx-auto max-w-6xl pt-[3.75rem] px-10 lg:px-0">
                     <Pricing />
-                    <div className='mx-auto w-full max-w-6xl pt-[3.75rem]'>
+                    <div>
                         <h2 className="lg:text-2xl font-semibold pb-10 pt-10">Compare features</h2>
                         <div className="md:flex block"> 
                             {compareFeatures.map((compareFeature, index) => (

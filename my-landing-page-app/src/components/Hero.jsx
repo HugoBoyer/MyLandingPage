@@ -1,4 +1,3 @@
-import pngConverterMoney from '../assets/pngegg.png'
 import pngPortableMoney from '../assets/portableMoney.png'
 import {useNavigate} from 'react-router-dom'
 
@@ -7,11 +6,11 @@ export default function Hero() {
     const navigate = useNavigate()
 
     return (
-        <div className='w-full mx-auto max-w-6xl md:max-w-4xl mt-20 lg:mt-[8vh] px-4 sm:px-6 lg:px-0'>
-            <div className='xl:flex lg:flex md:flex block gap-10 '>
-                <div className='lg:w-1/2'>
+        <div className='w-full mx-auto max-w-6xl mt-[10vh] lg:mt-[8vh] px-10 lg:px-0 '>
+            <div className='xl:flex lg:flex block gap-10 '>
+                <div className='lg:w-1/2 text-center'>
                     <span className="uppercase text-[#7f7f7fff] text-sm sm:text-base">- Gratuit pendant 30 jours</span>
-                    <h1 className="text-3xl lg:text-[72px] leading-snug lg:leading-[80px] font-bold">Boost your productivity. Start using our app today.</h1>
+                    <h1 className="px-20 lg:px-0 text-3xl lg:text-[72px] leading-snug lg:leading-[80px] font-bold lg:w-full md:w-full w-[100%]">Boost your productivity. Start using our app today.</h1>
                     <p className="mt-4 text-base">Rapide, simple et précis pour toutes vos transactions internationales.</p>
                     <div className='text-center'>
                         <button

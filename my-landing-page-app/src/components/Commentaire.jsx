@@ -1,5 +1,4 @@
 import { useState } from "react"
-import CommentaireList from "./CommentaireList"
 
 export default function Commentaire({comments, setComments}) {
     const [rating, setRating] = useState("0")
@@ -39,8 +38,8 @@ export default function Commentaire({comments, setComments}) {
 
     return (
         <>
-            <div className="bg-white p-10 rounded-lg">
-                <h3 className="lg:text-3xl pb-5 text-center md:text-2xl sm:text-1xl">Commentaire</h3>
+            <div className="bg-white rounded-lg lg:mb[0vh] mt[5vh] md:w-full">
+                <h3 className="lg:text-3xl pb-5 text-center md:text-start text-center md:text-2xl">Commentaire</h3>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <input type="file" onChange={handleFileChange} accept="image/*"/>
