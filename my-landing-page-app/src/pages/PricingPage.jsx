@@ -54,16 +54,21 @@ export default function PricingPage() {
                 
                 <main>
                     <Pricing />
-                    <div className='max-w-6xl mx-auto pt-15'>
+                    <div className='mx-auto w-full max-w-6xl pt-[3.75rem]'>
                         <h2 className="lg:text-2xl font-semibold pb-10 pt-10">Compare features</h2>
-                        <div className="flex"> 
+                        <div className="md:flex block"> 
                             {compareFeatures.map((compareFeature, index) => (
-                                <div key={index} className=" w-1/3">
-                                    <h2 className="lg:text-2xl font-semibold">{compareFeature.plan}</h2>
+                                <div key={index} className="md:w-1/3 w-full">
+                                    <h2 className="lg:text-2xl font-semibold text-center">{compareFeature.plan}</h2>
                                     <p className="border-b-1 mb-5 mt-5"></p>
-                                    <ul className="">
+                                    <ul className="flex flex-col items-center space-y-3">
                                         {compareFeature.features.map((feature, i) => (
-                                            <li key={i} className="flex items-center p-2.5"><FaCircleCheck size={28} color="bg-[#3164F4]"/><span className="pl-5">{feature}</span></li>
+                                            <li key={i} className="flex items-center w-full max-w-xs">
+                                                <div className="">
+                                                    <FaCircleCheck size={28} color="bg-[#3164F4]"/>
+                                                </div>
+                                                <span className="pl-5">{feature}</span>
+                                            </li>
                                         ))}
                                     </ul>
                                 </div>

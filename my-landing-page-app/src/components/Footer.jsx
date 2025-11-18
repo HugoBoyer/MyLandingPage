@@ -5,7 +5,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 export default function Footer () {
 
     return (
-        <footer className="bg-[#3164F4] text-gray-300 py-10 mt-20">
+        <footer className="bg-[#3164F4] text-gray-300 py-10 mt-20 ">
             <div className="max-w-6xl lg:mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:mx-10 mx-5">
                 <div>
                     <h3 className="text-lg font-semibold mb-3">À propos</h3>
