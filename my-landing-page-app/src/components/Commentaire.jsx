@@ -38,8 +38,8 @@ export default function Commentaire({comments, setComments}) {
 
     return (
         <>
-            <div className="bg-white rounded-lg lg:mb[0vh] mt[5vh] md:w-full">
-                <h3 className="lg:text-3xl pb-5 text-center md:text-start text-center md:text-2xl">Commentaire</h3>
+            <div className="bg-white rounded-lg">
+                <h3 className="lg:text-3xl pb-5 text-center md:pt-0 p-20 md:text-2xl text-2xl">Commentaire</h3>
                 <form onSubmit={handleSubmit}>
                     <div>
                         <input type="file" onChange={handleFileChange} accept="image/*"/>

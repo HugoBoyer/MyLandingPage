@@ -41,7 +41,7 @@ export default function ConversionDevise({comments, setComments}) {
                     <label className="block ">Montant :</label>
                     <input className="border-[#E5E7EB] border-2 border-solid rounded-lg  p-3 w-full" type="number"  value={montant || ""} onChange={(e) => setMontant(e.target.value)} placeholder={fromDevise}  />
                 </div>
-                <div className="inline m-20">
+                <div className="inline my-20">
                     <label className="block">
                         De :
                     </label>
@@ -51,7 +51,7 @@ export default function ConversionDevise({comments, setComments}) {
                         )}
                     </select>
                 </div>
-                <div className="inline m-20">
+                <div className="inline my-20">
                     <label className="block">
                         Vers :
                     </label>
@@ -72,7 +72,7 @@ export default function ConversionDevise({comments, setComments}) {
     
                 </div>
         </div>
-        <div className="w-2/3">
+        <div className="md:w-2/3  w-full">
             <Commentaire comments={comments} setComments={setComments} />
             <div>
                 <h2 className="text-center pt-10">Avis recents</h2>
