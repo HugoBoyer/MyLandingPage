@@ -10,7 +10,7 @@ export default function Header() {
         <header className="max-w-6xl mx-auto lg:px-0 px-3">
             <nav className="relative after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10 backdrop-blur-sm ">
                 <div className="max-w-6xl mx-auto">
-                    <div className="relative flex h-28 items-center justify-between">
+                    <div className="relative flex md:h-28 h-15 items-center justify-between">
                         <div className="flex md:flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                             <div className=" flex items-center md:hidden">
                                 <button onClick={() => setIsOpen(!isOpen)}>

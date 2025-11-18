@@ -36,7 +36,7 @@ export default function ConversionDevise({comments, setComments}) {
   return (
     <div className="md:flex md:flex-cols-2 block mt-20 justify-between w-full md:w-3/3 gap-10">
         <div className=" bg-white rounded-lg md:w-1/3 w-full">
-            <h1 className="text-5xl text-center pb-15">Conversion de devise</h1>
+            <h1 className="text-3xl text-center pb-15">Conversion de devise</h1>
                 <div className="inline w-full"> 
                     <label className="block ">Montant :</label>
                     <input className="border-[#E5E7EB] border-2 border-solid rounded-lg  p-3 w-full" type="number"  value={montant || ""} onChange={(e) => setMontant(e.target.value)} placeholder={fromDevise}  />

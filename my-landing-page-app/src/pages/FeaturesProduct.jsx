@@ -10,6 +10,7 @@ export default function ConversionApp ({comments , setComments}) {
             </section>    
 
             <main className="max-w-6xl mx-auto px-3 lg:px-0">
+                <h1 className="text-5xl text-center pb-15 pt-15">Tester notre produit</h1>
                 <ConversionDevise comments={comments} setComments={setComments}/>
             </main>
 
