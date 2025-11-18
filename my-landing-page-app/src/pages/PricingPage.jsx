@@ -52,7 +52,7 @@ export default function PricingPage() {
                     <Header />
                 </section>
                 
-                <main className="mx-auto max-w-6xl pt-[3.75rem] px-2 lg:px-0">
+                <main className="mx-auto max-w-6xl pt-[3.75rem] px-3 lg:px-0">
                     <Pricing />
                     <div>
                         <h2 className="lg:text-2xl font-semibold pb-10 pt-10">Compare features</h2>

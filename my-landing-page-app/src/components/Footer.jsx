@@ -5,7 +5,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 export default function Footer () {
 
     return (
-        <footer className="bg-[#3164F4] text-gray-300 py-10 mt-20 ">
+        <footer className="bg-[#3164F4] text-gray-300 py-10 mt-20 md:text-start text-center">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-3 lg:px-0">
                 <div>
                     <h3 className="text-lg font-semibold mb-3">À propos</h3>
@@ -21,7 +21,7 @@ export default function Footer () {
                 </div>
                 <div>
                     <h3 className="text-lg font-semibold mb-3">Suivez-nous</h3>
-                    <div className="flex space-x-4">
+                    <div className="flex space-x-4 justify-center md:justify-start">
                         <a href="#"><FaXTwitter /></a>
                         <a href="#"><FaInstagramSquare /></a>
                         <a href="#"><FaFacebookSquare /></a>
