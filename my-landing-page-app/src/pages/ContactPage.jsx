@@ -9,14 +9,13 @@ import Formulaire from "../components/Formulaire";
 export default function ContactPage() {
     return (
         <>
-            <section className="relative bg-gradient-to-br from-white via-blue-100 to-blue-800">
-                <Header />
-            </section>
+            <Header />
+
 
             <main className="w-full max-w-6xl mx-auto md:px-3 px-3 lg:px-0">
                 <div className="lg:flex mt-15 mb-20 gap-15">
                     <div className="lg:w-1/2">    
-                        <h1 className="md:text-4xl sm:mx-7">Contact Us</h1>
+                        <h1 className="md:text-start md:text-4xl text-center pb-5 font-semibold">Contact Us</h1>
                         <p>Lorem ipsum dolor, sit amet</p>
                         <p>Lorem ipsum dolor, sit amet</p>
                         <Formulaire />

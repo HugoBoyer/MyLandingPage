@@ -48,9 +48,8 @@ export default function PricingPage() {
 
         return (
             <>
-                <section className="relative bg-gradient-to-br from-white via-blue-100 to-blue-800">
-                    <Header />
-                </section>
+                <Header />
+
                 
                 <main className="mx-auto max-w-6xl pt-[3.75rem] px-3 lg:px-0">
                     <Pricing />

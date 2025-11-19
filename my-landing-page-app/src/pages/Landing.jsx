@@ -28,8 +28,8 @@ export default function Home ({comments, layout="horizontal"}) {
     return (
         
         <>
-            <section className="min-h-screen  relative w-full bg-gradient-to-br from-white via-blue-100 to-blue-800">
-                    <Header />
+            <Header />
+            <section className="md:mb-[8vh] min-h-screen  relative w-full bg-gradient-to-br from-white via-blue-100 to-blue-800">           
                     <Hero />
             </section>
             
