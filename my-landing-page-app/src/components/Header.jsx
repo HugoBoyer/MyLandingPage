@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom"
 import { HiMenu, HiX } from "react-icons/hi";
+import { motion } from "framer-motion"
+
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,13 +20,23 @@ export default function Header() {
                                 </button>
                             </div>
                             <div className="flex shrink-0 items-center pr-10 sm:pr-20">
-                                <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" className="h-8 w-auto" />
+                                <motion.img animate={{ rotate: 360 }}transition={{ duration: 2}} src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" className="icon-logo h-8 w-auto" />
                             </div>
+                            {/* Desktop links */}
                             <div className="">
                                 <div className="flex space-x-4 hidden md:block">
-                                    <Link to={"/"} onClick={() => navigation("/")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Home</Link>
-                                    <Link to={"/price"} onClick={() => navigation("/price")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Pricing</Link>
-                                    <Link to={"/contact"} onClick={() => navigation("/contact")} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303] ">Contact</Link>                     
+                                    <Link to={"/"} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303] relative group">
+                                        Home  
+                                        <span className="absolute left-1/2  -translate-x-1/2 bottom-0 h-[2px] w-0 bg-[#171819] transition-all duration-300 group-hover:w-[70%]"></span>
+                                    </Link>
+                                    <Link to={"/price"} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  group relative">
+                                        Pricing
+                                        <span className="absolute left-1/2  -translate-x-1/2 bottom-0 h-[2px] w-0 bg-[#171819] transition-all duration-300 group-hover:w-[70%]"></span>
+                                    </Link>
+                                    <Link to={"/contact"} className="rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303] group relative">
+                                        Contact
+                                        <span className="absolute left-1/2  -translate-x-1/2 bottom-0 h-[2px] w-0 bg-[#171819] transition-all duration-300 group-hover:w-[70%]"></span>
+                                    </Link>                     
                                 </div>
                             </div>
                         </div>
@@ -34,6 +46,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
+                    {/* Mobile menu */}
                     {isOpen && (
                         <div className="flex flex-col space-x-4 md:hidden bg-white">
                             <Link to={"/"} onClick={() => navigation("/")} className="hover:bg-black hover:text-white rounded-md px-3 py-2 text-sm  sm:text-base font-medium text-[#030303]  ">Home</Link>

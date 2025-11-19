@@ -1,6 +1,7 @@
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
+import {motion} from "framer-motion"
 
 export default function Footer () {
 
@@ -21,10 +22,10 @@ export default function Footer () {
                 </div>
                 <div>
                     <h3 className="text-lg font-semibold mb-3">Suivez-nous</h3>
-                    <div className="flex space-x-4 justify-center md:justify-start">
-                        <a href="#"><FaXTwitter /></a>
-                        <a href="#"><FaInstagramSquare /></a>
-                        <a href="#"><FaFacebookSquare /></a>
+                    <div className="flex space-x-4 justify-center md:justify-start" >
+                        <motion.a href="#" whileHover={{ scale: 1.2, color: "#3B82F6" }}><FaXTwitter /></motion.a>
+                        <motion.a href="#" whileHover={{ scale: 1.2, color: "#3B82F6" }}><FaInstagramSquare /></motion.a>
+                        <motion.a href="#" whileHover={{ scale: 1.2, color: "#3B82F6" }}><FaFacebookSquare /></motion.a>
                     </div>
                 </div>
             </div>
