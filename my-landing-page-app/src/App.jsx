@@ -4,6 +4,7 @@ import FeaturesProduct from './pages/FeaturesProduct'
 import { useEffect, useState } from 'react';
 import ContactPage from './pages/ContactPage';
 import PricingPage from './pages/PricingPage';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -28,12 +29,13 @@ function App() {
               '
             >
             <div className=''>
-              <Routes>
-                <Route path='/' element={<Landing comments={comments} setComments={setComments}/>}></Route>
-                <Route path='/conversion-devise' element={<FeaturesProduct comments={comments} setComments={setComments} />}></Route>
-                <Route path='/price' element={<PricingPage />} ></Route>
-                <Route path='/contact' element={<ContactPage />} ></Route>
-              </Routes>
+              <ScrollToTop />
+                <Routes>
+                    <Route path='/' element={<Landing comments={comments} setComments={setComments}/>}></Route>
+                    <Route path='/conversion-devise' element={<FeaturesProduct comments={comments} setComments={setComments} />}></Route>
+                    <Route path='/price' element={<PricingPage />} ></Route>
+                    <Route path='/contact' element={<ContactPage />} ></Route>
+                </Routes>  
             </div>
           </div>
         </div>
