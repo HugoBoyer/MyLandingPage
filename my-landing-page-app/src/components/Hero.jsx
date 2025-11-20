@@ -30,7 +30,7 @@ export default function Hero() {
                 <motion.div  className='w-1/2 lg:block md:hidden display' initial={{ scale: 1.2 , opacity: 0}}
                                 animate={{ scale: 1 , opacity: 1 }}            // Reviens à taille normale
                                 transition={{ duration: 0.8 , ease: "easeOut" }} 
-                                viewport={{ once: true }} >
+                                >
                     <img loading="lazy"  src={pngPortableMoney} className='w-64 sm:w-80 lg:w-[480px] xl:w-480 relative z-10' alt="Portable Money" />
                 </motion.div>
             </div>  
