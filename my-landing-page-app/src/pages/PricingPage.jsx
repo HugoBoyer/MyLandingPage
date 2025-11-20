@@ -60,9 +60,12 @@ export default function PricingPage() {
                                 <div key={index} className="md:w-1/3 w-full">
                                     <h2 className="lg:text-2xl font-semibold text-center">{compareFeature.plan}</h2>
                                     <p className="border-b-1 mb-5 mt-5"></p>
-                                    <ul className="flex flex-col items-center space-y-3">
+                                    <ul className="flex flex-col items-center space-y-3" >
                                         {compareFeature.features.map((feature, i) => (
-                                            <li key={i} className="flex items-center w-full max-w-xs">
+                                            <li key={i} className="flex items-center w-full max-w-xs"                                         initial={{ opacity: 0, x: 20 }}           
+                                        whileInView={{ opacity: 1, y: 0 }}           // Arrive en glissant quand visible
+                                        transition={{ duration: 2 }}
+                                        >
                                                 <div className="">
                                                     <FaCircleCheck size={28} color="bg-[#3164F4]"/>
                                                 </div>
