@@ -2,6 +2,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Pricing from "../components/Pricing";
 import { FaCircleCheck } from "react-icons/fa6";
+import { motion } from "framer-motion"
 
 export default function PricingPage() {
     const compareFeatures = [
@@ -62,15 +63,17 @@ export default function PricingPage() {
                                     <p className="border-b-1 mb-5 mt-5"></p>
                                     <ul className="flex flex-col items-center space-y-3" >
                                         {compareFeature.features.map((feature, i) => (
-                                            <li key={i} className="flex items-center w-full max-w-xs"                                         initial={{ opacity: 0, x: 20 }}           
-                                        whileInView={{ opacity: 1, y: 0 }}           // Arrive en glissant quand visible
-                                        transition={{ duration: 2 }}
-                                        >
+                                            <motion.li key={i} className="flex items-center w-full max-w-xs"                                         initial={{ opacity: 0, x: 20 }}           
+                                                initial={{ opacity: 0, y: 20 }}           
+                                                whileInView={{ opacity: 1, y: 0 }}           // Arrive en glissant quand visible
+                                                transition={{ duration: 0.8 }}
+                                                viewport={{ once: true , amount: 0.3 }} 
+                                            >
                                                 <div className="">
                                                     <FaCircleCheck size={28} color="bg-[#3164F4]"/>
                                                 </div>
                                                 <span className="pl-5">{feature}</span>
-                                            </li>
+                                            </motion.li>
                                         ))}
                                     </ul>
                                 </div>
